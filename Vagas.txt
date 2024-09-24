@@ -1,0 +1,47 @@
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { getAllJobs } from '../../redux/jobRelated/jobHandle';
+import styled from 'styled-components';
+
+const ShowJobs = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const { jobsList, loading, error, response } = useSelector(
+    (state) => state.job
+  );
+
+  useEffect(() => {
+    dispatch(getAllJobs());
+  }, [dispatch]);
+
+  console.log(jobsList);
+
+  return (
+    <>
+      {loading ? (
+        <>Loading...</>
+      ) : (
+        <>
+          {jobsList.map((job) => (
+            <StyledJobs>
+              <StyledJob onClick={() => navigate('/jobs/job/' + job._id)}>
+                <StyledPic src={job.company.picture} />
+                <>{job.company.name}</>
+                <>{job.typeOfWork}</>
+              </StyledJob>
+            </StyledJobs>
+          ))}
+        </>
+      )}
+    </>
+  );
+};
+
+export default ShowJobs;
+
+const StyledJobs = styled.div``;
+const StyledJob = styled.div``;
+
+const StyledPic = styled.img``;
