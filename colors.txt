@@ -1,8 +1,0 @@
-#000000 - black
-#E9E9E9 - gray 
-#FFFFFF - white
-#00247D - azul marinho
-#00247D - azul marinho claro
-#FF5E3C - laranja escuro
-#FF5E3C - laranja
-#FFD0B4 - laranja opaco 

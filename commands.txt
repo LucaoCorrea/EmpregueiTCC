@@ -1,6 +1,0 @@
-Abre o projeto
-Faz split do terminal
-no repositório /Empreguei dá npm i
-no repositório /Empreguei/client dá npm i
-no repositório /Empreguei dá npm run dev
-Se divirta

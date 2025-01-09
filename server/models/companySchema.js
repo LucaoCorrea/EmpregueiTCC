@@ -53,7 +53,7 @@ const companySchema = new mongoose.Schema(
 
     picture: {
       type: String,
-      default: 'https://cdn-icons-png.flaticon.com/512/5984/5984357.png',
+    // default: //default picture
     },
     department: {
       type: String,

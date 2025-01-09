@@ -36,7 +36,7 @@ const adminSchema = new mongoose.Schema(
     },
     picture: {
       type: String,
-      default: 'https://www.svgrepo.com/show/41173/admin-with-cogwheels.svg',
+     // default: //default picture
     },
     role: {
       type: String,

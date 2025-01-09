@@ -7,8 +7,7 @@ const categorySchema = new mongoose.Schema({
   },
   picture: {
     type: String,
-    default:
-      'https://icons.veryicon.com/png/o/commerce-shopping/icon-of-lvshan-valley-mobile-terminal/home-category.png',
+   // default: //default picture
   },
 });
 

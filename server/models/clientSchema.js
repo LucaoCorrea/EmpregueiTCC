@@ -51,8 +51,7 @@ const clientSchema = new mongoose.Schema(
 
     picture: {
       type: String,
-      default:
-        'https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png',
+     // default: //default picture,
     },
     phone: {
       type: String,
